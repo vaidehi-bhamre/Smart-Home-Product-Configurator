@@ -1,0 +1,50 @@
+.alert {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 18px;
+  border-radius: var(--radius-md);
+  font-size: 14px;
+  box-shadow: var(--shadow-md);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hide {
+  opacity: 0;
+  transform: translateY(-8px);
+}
+
+.success {
+  background: #f0f8f4;
+  border: 1px solid #b3ddc8;
+  color: #2d6a4f;
+}
+
+.error {
+  background: #fdf0f0;
+  border: 1px solid #f5b8b8;
+  color: #a32d2d;
+}
+
+.icon {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.message {
+  flex: 1;
+}
+
+.close {
+  font-size: 18px;
+  color: inherit;
+  opacity: 0.6;
+  transition: opacity var(--transition);
+  line-height: 1;
+}
+
+.close:hover {
+  opacity: 1;
+}
