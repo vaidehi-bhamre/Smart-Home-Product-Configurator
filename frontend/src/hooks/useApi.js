@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback } from "react";
 
-const BASE_URL = process.env.REACT_APP_API_URL || "http://localhost:4000/api";
+const BASE_URL = process.env.REACT_APP_API_URL || "https://smart-home-product-configurator.onrender.com";
 
 export function useProducts() {
   const [products, setProducts] = useState([]);
