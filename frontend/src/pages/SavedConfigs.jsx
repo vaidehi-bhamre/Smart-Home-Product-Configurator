@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import styles from './SavedConfigs.module.css';
 
-const BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:4000/api';
+const BASE_URL = process.env.REACT_APP_API_URL || 'https://smart-home-product-configurator.onrender.com';
 
 export default function SavedConfigs() {
   const [configs, setConfigs] = useState([]);
